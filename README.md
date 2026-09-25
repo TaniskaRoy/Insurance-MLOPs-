@@ -13,7 +13,7 @@ The application follows a **modular architecture and MLOps workflow**, using **M
 ## Tech Stack
 
 <p align="center">
-  <img src="./readme_imgs/techstack-matrix.svg.svg" alt="Tech Stack Matrix" width="100%" />
+  <img src="./readme_imgs/techstack-matrix.svg" alt="Tech Stack Matrix" width="100%" />
 </p>
 
 | Technology     | Category             |
@@ -38,7 +38,7 @@ The project is divided into two main workflows: a **Model Training & Model Regis
 ### 1. Model Training & Model Registry Pipeline
 
 <p align="center">
-  <img src="./readme_imgs/training-pipeline.svg.svg" alt="Model Training and Registry Pipeline" width="100%" />
+  <img src="./readme_imgs/training-pipeline.svg" alt="Model Training and Registry Pipeline" width="100%" />
 </p>
 
 ### Pipeline Flow
@@ -89,7 +89,7 @@ The ML pipeline processes the data through the following stages:
 
     </td>
     <td width="45%" align="center" valign="top">
-      <img src="./readme_imgs/cicd-pipeline.svg.svg" alt="CI/CD and Deployment Pipeline" width="100%" />
+      <img src="./readme_imgs/cicd-pipeline.svg" alt="CI/CD and Deployment Pipeline" width="100%" />
     </td>
   </tr>
 </table>
