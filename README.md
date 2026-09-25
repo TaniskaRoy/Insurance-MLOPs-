@@ -4,7 +4,7 @@
 
 The project aims to predict whether a **registered vehicle-insurance customer is likely to purchase vehicle insurance** based on their existing customer and policy information. The application takes customer details as input and uses a **Random Forest classification model** to generate the prediction.
 
-The project implements an end-to-end machine learning workflow for processing customer data, training and evaluating the model, with the trained model **integrated into a Flask API for serving predictions**.
+The project implements an end-to-end machine learning workflow for processing customer data, training and evaluating the model, with the trained model **integrated into a FastAPI for serving predictions**.
 
 The application follows a **modular architecture and MLOps workflow**, using **MongoDB Atlas** for data storage, **AWS S3** for model artifact storage, **AWS ECR** as the Docker container registry, and **AWS EC2** for application deployment. **GitHub Actions** is used to automate the CI/CD pipeline.
 
@@ -21,7 +21,7 @@ The application follows a **modular architecture and MLOps workflow**, using **M
 | Python         | Programming Language |
 | Pandas         | Data Processing      |
 | Scikit-learn   | Machine Learning     |
-| Flask          | API / Model Serving  |
+| FastAPI          | API / Model Serving  |
 | MongoDB Atlas  | Database             |
 | AWS S3         | Cloud Storage        |
 | Docker         | Containerization     |
@@ -84,7 +84,7 @@ The ML pipeline processes the data through the following stages:
 * **Docker Build** — Packages the application and its dependencies into a Docker image.
 * **AWS ECR** — Stores the built Docker image.
 * **AWS EC2** — Pulls and runs the Docker image to host the deployed application.
-* **Flask API** — Serves the trained model and handles prediction requests.
+* **FastAPI** — Serves the trained model and handles prediction requests.
 * **AWS S3** — Provides the production model artifact used by the deployed application.
 
     </td>
