@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 280" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1329"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arrowAmber" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+
+  <rect width="1020" height="280" rx="14" fill="url(#pGrad)" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- MongoDB Atlas -->
+  <g transform="translate(30, 40)">
+    <rect width="130" height="70" rx="8" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+    <text x="65" y="32" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#a7f3d0" font-weight="700">MongoDB Atlas</text>
+    <text x="65" y="50" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#6ee7b7">Raw Insurance DB</text>
+  </g>
+
+  <path d="M 160 75 L 180 75" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Data Ingestion -->
+  <g transform="translate(190, 40)">
+    <rect width="125" height="70" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="62" y="32" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e0f2fe" font-weight="700">Data Ingestion</text>
+    <text x="62" y="50" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#93c5fd">Extract to DF</text>
+  </g>
+
+  <path d="M 315 75 L 335 75" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Data Validation -->
+  <g transform="translate(345, 40)">
+    <rect width="125" height="70" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="62" y="32" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e0f2fe" font-weight="700">Data Validation</text>
+    <text x="62" y="50" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#93c5fd">schema.yaml Checks</text>
+  </g>
+
+  <path d="M 470 75 L 490 75" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Data Transformation -->
+  <g transform="translate(500, 40)">
+    <rect width="135" height="70" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="67" y="32" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e0f2fe" font-weight="700">Transformation</text>
+    <text x="67" y="50" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#93c5fd">Encoding &amp; Scaling</text>
+  </g>
+
+  <path d="M 635 75 L 655 75" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Model Trainer -->
+  <g transform="translate(665, 40)">
+    <rect width="130" height="70" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="65" y="32" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e0f2fe" font-weight="700">Model Trainer</text>
+    <text x="65" y="50" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#93c5fd">Random Forest</text>
+  </g>
+
+  <path d="M 795 75 L 825 75" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Model Evaluation -->
+  <g transform="translate(835, 40)">
+    <rect width="150" height="70" rx="8" fill="#451a03" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="75" y="32" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#fef3c7" font-weight="700">Model Evaluation</text>
+    <text x="75" y="50" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#fde68a">Threshold Check</text>
+  </g>
+
+  <!-- Connect to Bottom Row -->
+  <path d="M 910 110 L 910 180 L 835 180" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowAmber)"/>
+
+  <!-- AWS S3 Prod Baseline -->
+  <g transform="translate(380, 150)">
+    <rect width="180" height="60" rx="8" fill="#78350f" stroke="#d97706" stroke-width="1.5"/>
+    <text x="90" y="28" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#ffedd5" font-weight="700">AWS S3</text>
+    <text x="90" y="44" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#fed7aa">Existing Baseline Model</text>
+  </g>
+
+  <path d="M 560 180 L 675 180" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4 4" marker-end="url(#arrowAmber)"/>
+
+  <!-- Model Pusher -->
+  <g transform="translate(685, 150)">
+    <rect width="140" height="60" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="70" y="28" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#fef3c7" font-weight="700">Model Pusher</text>
+    <text x="70" y="44" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#fde68a">Trigger S3 Push</text>
+  </g>
+
+  <path d="M 685 180 L 570 180" stroke="#10b981" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Production Model Artifact Final -->
+  <g transform="translate(70, 150)">
+    <rect width="210" height="60" rx="8" fill="#4c1d95" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="105" y="28" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f3e8ff" font-weight="700">AWS S3 Artifact Registry</text>
+    <text x="105" y="44" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#d8b4fe">Production Model: model.pkl</text>
+  </g>
+
+  <path d="M 380 180 L 290 180" stroke="#a855f7" stroke-width="2" marker-end="url(#arrow)"/>
+</svg>

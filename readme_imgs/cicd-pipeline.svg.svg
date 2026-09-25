@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 540" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgV" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1329"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <marker id="arrV" viewBox="0 0 10 10" refX="5" refY="6" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 1 0 L 5 8 L 9 0 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arrPurp" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#c084fc"/>
+    </marker>
+  </defs>
+
+  <rect width="420" height="540" rx="14" fill="url(#bgV)" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Step 1: GitHub Repo -->
+  <g transform="translate(60, 20)">
+    <rect width="300" height="42" rx="6" fill="#1e293b" stroke="#cbd5e1" stroke-width="1.2"/>
+    <text x="150" y="26" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f8fafc" font-weight="600">GitHub Repository (Git Push)</text>
+  </g>
+  <path d="M 210 62 L 210 78" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrV)"/>
+
+  <!-- Step 2: GitHub Actions -->
+  <g transform="translate(60, 85)">
+    <rect width="300" height="42" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1.2"/>
+    <text x="150" y="26" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e0f2fe" font-weight="600">GitHub Actions (Workflow Trigger)</text>
+  </g>
+  <path d="M 210 127 L 210 143" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrV)"/>
+
+  <!-- Step 3: Self-Hosted Runner -->
+  <g transform="translate(60, 150)">
+    <rect width="300" height="42" rx="6" fill="#78350f" stroke="#f59e0b" stroke-width="1.2"/>
+    <text x="150" y="26" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#fef3c7" font-weight="600">Self-Hosted Runner (AWS EC2)</text>
+  </g>
+  <path d="M 210 192 L 210 208" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrV)"/>
+
+  <!-- Step 4: Docker Build -->
+  <g transform="translate(60, 215)">
+    <rect width="300" height="42" rx="6" fill="#0c4a6e" stroke="#0ea5e9" stroke-width="1.2"/>
+    <text x="150" y="26" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e0f2fe" font-weight="600">Docker Build &amp; Tag Image</text>
+  </g>
+  <path d="M 210 257 L 210 273" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrV)"/>
+
+  <!-- Step 5: AWS ECR -->
+  <g transform="translate(60, 280)">
+    <rect width="300" height="42" rx="6" fill="#7c2d12" stroke="#ea580c" stroke-width="1.2"/>
+    <text x="150" y="26" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#ffedd5" font-weight="600">AWS ECR (Container Registry)</text>
+  </g>
+  <path d="M 210 322 L 210 338" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrV)"/>
+
+  <!-- Step 6: EC2 Host -->
+  <g transform="translate(60, 345)">
+    <rect width="300" height="42" rx="6" fill="#78350f" stroke="#f59e0b" stroke-width="1.2"/>
+    <text x="150" y="26" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#fef3c7" font-weight="600">AWS EC2 Host (Port 5080)</text>
+  </g>
+  <path d="M 210 387 L 210 403" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrV)"/>
+
+  <!-- Step 7: Flask App -->
+  <g transform="translate(40, 410)">
+    <rect width="200" height="42" rx="6" fill="#064e3b" stroke="#10b981" stroke-width="1.2"/>
+    <text x="100" y="26" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#a7f3d0" font-weight="600">Flask API (app.py)</text>
+  </g>
+
+  <!-- Side: AWS S3 Artifact -->
+  <g transform="translate(260, 410)">
+    <rect width="125" height="42" rx="6" fill="#581c87" stroke="#a855f7" stroke-width="1.2"/>
+    <text x="62" y="22" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#f3e8ff" font-weight="700">AWS S3</text>
+    <text x="62" y="34" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#d8b4fe">Pull Model Artifact</text>
+  </g>
+  <path d="M 260 431 L 246 431" stroke="#c084fc" stroke-width="1.5" marker-end="url(#arrPurp)"/>
+
+  <path d="M 140 452 L 140 468" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrV)"/>
+
+  <!-- Step 8: Prediction / UI -->
+  <g transform="translate(40, 475)">
+    <rect width="200" height="42" rx="6" fill="#047857" stroke="#34d399" stroke-width="1.5"/>
+    <text x="100" y="26" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#ecfdf5" font-weight="700">Inference &amp; Prediction UI</text>
+  </g>
+</svg>
